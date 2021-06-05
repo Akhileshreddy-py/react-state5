@@ -7,11 +7,15 @@ constructor()
   super()
 this.state={inc:0};
 }
+ak()
+{
+  this.setState({inc:"hello"})
+}
 render()
 { return (
     <div>
       <h1>increment : {this.state.inc} </h1>
-      <button onClick={function Ak(){this.setState({inc:22})}}> click </button>
+      <button onClick={this.ak}> click </button>
     </div>
   );
 }
